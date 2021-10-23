@@ -24,7 +24,7 @@ dict_city = {"City" : ["Moscow", "Saint-Petersburg", "Novosibirsk"],
             "Population" : [12678079,   5398064,  1625631]}
 df = pd.DataFrame(dict_city)
 `````
-![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/1.png)
 
 сохранение датафрейма на компьютер в формате xlsx
 ```
@@ -37,19 +37,19 @@ lists_city = [["Moscow", "Saint-Petersburg", "Novosibirsk"],
 
 pd.DataFrame(lists_city)
 `````
-КАРТИНКА2 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/2.png)
 
 транспонирование (меням столбцы и строки местами)
 ```
 pd.DataFrame(lists_city).T
 `````
-КАРТИНКА 3 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/3.png)
 
-# создание датафрейма из файла 
-# в кавычках нужно прописать путь к файлу на своем компьютере
-# его можно скачать по ссылке https://drive.google.com/file/d/16fM_JEC5GAkYEDaDgzROrBm8loi9RZRZ/view 
-# в файле данные о смертности людей от разных причин по 204 странам с 2000 по 2019 гг с сайта 
-# http://ghdx.healthdata.org/gbd-results-tool
+создание датафрейма из файла 
+в кавычках нужно прописать путь к файлу на своем компьютере
+его можно скачать по ссылке https://drive.google.com/file/d/16fM_JEC5GAkYEDaDgzROrBm8loi9RZRZ/view 
+в файле данные о смертности людей от разных причин по 204 странам с 2000 по 2019 гг с сайта 
+http://ghdx.healthdata.org/gbd-results-tool
 ```
 df = pd.read_csv("/Users/sherlock/Downloads/IHME-GBD_2019_DATA-ff08d9bc-1/IHME-GBD_2019_DATA-ff08d9bc-1.csv", encoding = "utf-8") 
 `````
@@ -57,19 +57,19 @@ df = pd.read_csv("/Users/sherlock/Downloads/IHME-GBD_2019_DATA-ff08d9bc-1/IHME-G
 ```
 df.head()
 `````
-КАРТИНКА 4 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/4.png)
 
 первые 15 строк датафрейма
 ```
 df.head(8)
 `````
-КАРТИНКА 5 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/5.png)
 
 последние 5 строк датафрейма
 ```
 df.tail()
 `````
-КАРТИНКА 6 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/6.png)
 
 информация о датафрейме
 ```
@@ -103,14 +103,14 @@ df.shape
 ```
 df.describe() 
 `````
-КАРТИНКА 7 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/7.png)
 
 статистика включает не только числовые столбцы, но и строки 
 (unique - сколько уникальных значений, top - какое самое популярное значение, freq - как часто встречается самое популярное) 
 ```
 df.describe(include = 'all')
 `````
-КАРТИНКА 8 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/8.png)
 
 удаление пустых значений (missing values, NA)
 ```
@@ -156,19 +156,19 @@ Name: measure, Length: 257040, dtype: object
 ```
 df[["location","sex","year"]]
 `````
-КАРТИНКА 9 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/9.png)
 
 выбирает все строки, а столбцы от "location" до "val"
 ```
 df.loc[:, "location":"val"]
 `````
-КАРТИНКА 10 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/10.png)
 
 выбирает строки от 100 до 110 (правый край, то есть число 110, в методе iloc включается), столбцы от "location" до "val"
 ```
 df.loc[100:110, "location":"val"] 
 `````
-КАРТИНКА 11 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/11.png)
 
 выбирает только те строки в столбце "sex", где указаны оба пола ("Both")
 ```
@@ -178,46 +178,49 @@ df[df["sex"] == "Both"]
 ```
 df[(df["sex"] == "Both") & (df["cause"] == "Cardiovascular diseases") & (df["year"] == 2019)]
 `````
-КАРТИНКА 12 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/12%20!!.png)
 
 сортирует датафрейм по столбцу "val", ascending означает по возрастанию, ascending = False - по убыванию
 ```
 cardio.sort_values(by = ["val"], ascending=False, inplace=False, na_position='last', ignore_index=False)
 `````
-КАРТИНКА 13 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/13.png)
 
 ищет строки, где либо Russia, либо Russian Federation (соблюдается одно из условий)
 ```
 df[(df["location"] == "Russia") | (df["location"] == "Russian Federation")] 
 `````
-КАРТИНКА 14 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/14.png)
 
 строки содержат упоминание HIV (ВИЧ)
 ```
 df[df["cause"].str.contains("HIV")]
 `````
-КАРТИНКА 15 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/15.png)
 
 строки НЕ содержат упоминание ВИЧ
 ```
 df[df["cause"].str.contains("HIV") == False]
 `````
-КАРТИНКА 16 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/16.png)
 
 удаляет столбец measure
 ```
 df.drop("measure", axis=1, inplace = True)
 `````
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/1000.png)
+создает новый столбец, в котором будут округленные значения из столбца val
+
 удаляет столбцы metric, age, upper, lower
 ```
 df.drop(["metric","age","upper","lower"], axis=1, inplace = True)
 `````
-КАРТИНКА 17 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/17.png)
 создает новый столбец, в котором будут округленные значения из столбца val
 ```
 df["val_round"] = df["val"].round(decimals = 1) 
 `````
-КАРТИНКА 18 ![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-10-21%20%D0%B2%202.40.16.png)
+![здесь будет картинка](https://github.com/mshnktn/heritage-statictics/blob/main/18.png)
 
 меняет название столбца
 ```
